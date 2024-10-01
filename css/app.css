@@ -6,8 +6,23 @@
 
 html, body {
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 20px; /* Establece el tamaño de la fuente a 20 píxeles */
 }
+.dropdown-menu {
+    background-color: rgba(216, 171, 7, 0.5); /* Amarillo translúcido */
+  }
+
+  /* Cambiar fondo a gris y texto a color personalizado al hacer hover */
+  .dropdown-item:hover {
+    background-color: rgba(211, 211, 211, 1); /* Color gris claro al hacer hover */
+    color: rgba(5, 2, 33, 0.5); /* Color como el fondo al hacer hover */
+  }
+
+  /* Cambiar el color de los enlaces al hacer hover */
+  .dropdown-item:hover a {
+    color: rgba(216, 171, 7, 0.5); /* Color dorado traslúcido */
+  }
 
 .hero {
     background-image: url('../images/Portada.jpg');
