@@ -8,7 +8,7 @@ Este es mi porfolio de mis hazañas, de las busquedas que realizo con sus result
 
 
 ## Ver ejemplo
-- [ENLACEGITHUBPAGES](ENLACEGITHUBPAGES)
+- [PORFOLIO](https://detectorista.github.io/mi_porfolio/)
 
 ## Instalacion 
 No es necesario la instalacion , solo con hacer doble click en url correspondiente
