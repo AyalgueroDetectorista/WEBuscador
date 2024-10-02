@@ -480,15 +480,15 @@ a:hover {
   padding-bottom: 15px;
 }
 
-.navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+.navbar-b.navbar-reduce .nav-link { /* color de las letras del nabvar */
+  color: #5f5959d9;
 }
 
-.navbar-b.navbar-reduce .nav-link:before {
+.navbar-b.navbar-reduce .nav-link:before { /* cambia la linea del nabvar */
   background-color: #0078ff;
 }
 
-.navbar-b.navbar-reduce .nav-link:hover {
+.navbar-b.navbar-reduce .nav-link:hover { /* cambia el color cuando lo selecionamos */
   color: #0078ff;
 }
 
@@ -500,7 +500,7 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
+  color: #5f5959d9;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
