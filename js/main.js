@@ -89,29 +89,96 @@
 		}
 	});
 
-	/*--/ Star Typed /--*/
-	if ($('.text-slider').length == 1) {
-    var typed_strings = $('.text-slider-items').text();
-		var typed = new Typed('.text-slider', {
-			strings: typed_strings.split(','),
+	$(document).ready(function() {
+		// Animación del slider en la sección "Historia"
+		if ($('.text-slider').length == 1) {
+		  var typed_strings_historia = $('.text-slider-items').text();
+		  var typed_historia = new Typed('.text-slider', {
+			strings: typed_strings_historia.split(','),
 			typeSpeed: 80,
 			loop: true,
 			backDelay: 1100,
 			backSpeed: 30
-		});
-	}
+		  });
+		}
+	  
+		// Animación del slider en la sección "Contact me by"
+		if ($('.text-slider-contacto').length == 1) {
+			var typed_contact_strings = ['Gmail', 'WhatsApp', 'Instagram', 'Facebook']; // Añadir cadenas directamente aquí
+			var typed_contact = new Typed('.text-slider-contacto', {
+				strings: typed_contact_strings,
+				typeSpeed: 80,
+				loop: true,
+				backDelay: 1100,
+				backSpeed: 30,
+				preStringTyped: function(pos, self) {
+				  // Remover clases previas
+				  $('.text-slider-contacto').removeClass('gmail-color whatsapp-color instagram-color facebook-color');
+				  
+				  // Aplicar la clase correcta según la posición (índice) del texto
+				  if (typed_contact_strings[pos] === 'Gmail') {
+					$('.text-slider-contacto').addClass('gmail-color');
+				  } else if (typed_contact_strings[pos] === 'WhatsApp') {
+					$('.text-slider-contacto').addClass('whatsapp-color');
+				  } else if (typed_contact_strings[pos] === 'Instagram') {
+					$('.text-slider-contacto').addClass('instagram-color');
+				  } else if (typed_contact_strings[pos] === 'Facebook') {
+					$('.text-slider-contacto').addClass('facebook-color');
+				  }
+				}
+			  });
+			}
+		  });
+	  
+
 
 	/*--/ Testimonials owl /--*/
-	$('#testimonial-mf').owlCarousel({
-		margin: 20,
-		autoplay: true,
-		autoplayTimeout: 4000,
-		autoplayHoverPause: true,
-		responsive: {
-			0: {
-				items: 1,
+	$(document).ready(function() {
+		$("#testimonial-mf").owlCarousel({
+			loop: true,
+			margin: 10,
+			nav: false,
+			dots: true,
+			autoplay: true, // Activar la reproducción automática
+			autoplayTimeout: 8000, // Cambiar cada 8 segundos
+			autoplayHoverPause: true, // Pausar cuando el mouse está sobre el carrusel
+			responsive: {
+				0: {
+					items: 1 // Muestra 1 testimonio en pantallas pequeñas
+				},
+				600: {
+					items: 1 // Muestra 1 testimonio en pantallas medianas
+				},
+				1000: {
+					items: 1 // Muestra 1 testimonio en pantallas grandes
+				}
 			}
-		}
-	});
+		});
+		 // Cambiar de testimonio al hacer clic en un punto
+		 $('.owl-dot').on('click', function() {
+			var index = $(this).index();
+			$('#testimonial-mf').trigger('to.owl.carousel', [index, 300]);
+		});
+	})
+	
+  $(document).ready(function(){
+	var maquinariaSlider = $('.maquinaria-slider').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      items: 3, //// Mostrar 3 items a la vez
+      navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"] // Flechas personalizadas
+    });
+	 // Vincular las flechas personalizadas
+	 $('.owl-prev').click(function() {
+		maquinariaSlider.trigger('prev.owl.carousel');
+	  });
+	  
+	  $('.owl-next').click(function() {
+		maquinariaSlider.trigger('next.owl.carousel');
+	  });
+  });
+
 
 })(jQuery);

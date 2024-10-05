@@ -23,6 +23,9 @@
   <link href="https://unpkg.com/ionicons@5.5.2/dist/css/ionicons.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 
 
@@ -46,22 +49,22 @@
       <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#historia">Historia</a>
+            <a class="nav-link js-scroll active" href="#Historia">Historia</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll" href="#SobreMi">SobreMi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#service">Legislacion</a>
+            <a class="nav-link js-scroll" href="#Legislacion">Legislacion</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#work">Maquinaria</a>
+            <a class="nav-link js-scroll" href="#Maquinaria">Maquinaria</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#blog">Organizacion</a>
+            <a class="nav-link js-scroll" href="#Comentarios">Comentarios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#contact">Contacto</a>
+            <a class="nav-link js-scroll" href="#contactos">Contacto</a>
           </li>
         </ul>
       </div>
@@ -70,22 +73,25 @@
   <!--/ Nav End /-->
 
   <!--/ Intro Skew Star /-->
-  <div id="historia" class="intro route bg-image" style="background-image: url(img/Portada.jpg)">
+  <div id="Historia" class="intro route bg-image" style="background-image: url(img/Portada.jpg)">
     <div class="overlay-itro"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
           <h1 class="intro-title mb-4">Mi nombre es Pablo Ayalguero</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Tu lo pierdes => yo te lo recupero,Colaborador Objetos Perdidos Gijon,Buscador de caminos perdidos,Siempre a disposicion del ciudadano</span><strong class="text-slider"></strong></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          <p class="intro-subtitle">
+            <span class="text-slider-items">Tu lo pierdes => yo te lo recupero,Colaborador Objetos Perdidos Gijon,Buscador de caminos perdidos,Siempre a disposicion del ciudadano</span>
+            <strong class="text-slider"></strong>
+          </p>
         </div>
       </div>
     </div>
   </div>
+  
   <!--/ Intro Skew End /-->
 
-  <section id="about" class="about-mf sect-pt4 route">
+  <section id="SobreMi" class="about-mf sect-pt4 route">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -157,7 +163,7 @@
   </section>
 
   <!--/ Section Services Star /-->
-  <section id="service" class="services-mf route">
+  <section id="Legislacion" class="services-mf route">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -181,10 +187,15 @@
             <div class="service-content">
               <h2 class="s-title">Ayuntamiento</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-                <a href="https://www.gijon.es/es/directorio/playa-de-san-lorenzo" target="_blank">Visita la página</a>
+                La playa más tradicional y la de mayor tamaño de Gijón,
+                 destino clásico de bañistas en todas las temporadas. 
+                 Presidida por la iglesia de San Pedro, es una de las imágenes
+                  más representadas de la ciudad. En forma de concha, 
+                  su paseo de casi tres kilómetros es frecuentado a cualquier hora. 
+                  Está considerada una de las mejores playas urbanas del mundo para practicar
+                   o iniciarse en el surf.
+                   <p class="s-description text-center"> <a href="https://www.gijon.es/es/directorio/playa-de-san-lorenzo" target="_blank">Visita la página</a>
+               
               </p>
             </div>
           </div>
@@ -197,9 +208,13 @@
             <div class="service-content">
               <h2 class="s-title">Provincial</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
+                Decreto 18/2002, de 8 febrero 2002. Regula la Comisión de las inversiones
+                con cargo al uno por ciento cultural en obras públicas del Principado de Asturias
+                <p class="s-description text-center">Decreto 126/2001, de 18 octubre 2001. Reglamento de composición y funcionamiento
+                    de la Comisión de Valoración de Bienes del Patrimonio Cultural de Asturias 
+                 <p class="s-description text-center">
+                 Decreto 88/1994, de 5 diciembre 1994.
+                 Regula la actividad artesana en el Principado de Asturias
               </p>
             </div>
           </div>
@@ -210,12 +225,13 @@
                 <span class="ico-circle"><i class="fas fa-balance-scale"></i></span> <!-- Ícono de balanza -->
             </div>
             <div class="service-content">
-              <h2 class="s-title">Estatutos</h2>
+              <h2 class="s-title">Leyes</h2>
               <p class="s-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                provident vitae! Magni
-                tempora perferendis eum non provident.
-              </p>
+                Está completamente prohibido en castillos, murallas, puentes antiguos, calzadas romanas y lugares como
+                 parques naturales o ciudades reconocidas como Patrimonio de la Humanidad.
+                 <p class="s-description text-center"> <a href="https://www.boe.es/buscar/pdf/2001/BOE-A-2001-10676-consolidado.pdf" target="_blank">Visita la página</a> </p>
+                 </p>
+              <p class="s-description text-center"> <span class="w-date">03 Junio 2024</span>  </p>
             </div>
           </div>
         </div> 
@@ -275,102 +291,86 @@
   </div>
 
  <!-- / Section Portfolio Star /-->
-  <section id="work" class="portfolio-mf sect-pt4 route">
+ <section id="Maquinaria" class="portfolio-mf sect-pt4 route">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="title-box text-center">
-            <h3 class="title-a">
-              MAQUINARIA
-            </h3>
-            <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
+            <h3 class="title-a">MAQUINARIA</h3>
+            <p class="subtitle-a">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             <div class="line-mf"></div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/maquinaria1.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/maquinaria1.jpg" alt="" class="img-fluid">
+      <div class="row maquinaria-slider owl-carousel">
+        <div class="work-box">
+          <a href="img/maquinaria1.jpg" data-lightbox="maquinaria-gallery">
+            <div class="work-img">
+              <img src="img/maquinaria1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <h2 class="w-title">Probando el nuevo #xpdeus2...</h2>
+              <div class="w-more">
+                 <a href="https://www.instagram.com/p/CYzvOCwqWLz/" class="w-ctegory">MAS DETALLES</a>
+                 <span class="w-date">16 Enero. 2022</span>
               </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Probando el nuevo #xpdeus2 . 
-                        Quiero dar las gracias a la asociación nacional de detectoristas @los_pititos
-                        así como a @eurodetection , la oportunidad de poder probar y tener unas primeras
-                         impresiones de esta maravilla.</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">IMAGEN</span> / <span class="w-date">16 Enero. 2022</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
+              
+            </div>
+          </a>
         </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/maquinaria2.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/maquinaria2.jpg" alt="" class="img-fluid">
+        <div class="work-box">
+          <a href="img/maquinaria2.jpg" data-lightbox="maquinaria-gallery">
+            <div class="work-img">
+              <img src="img/maquinaria2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <h2 class="w-title">Una bajamar más....limpiando el río.</h2>
+              <div class="w-more">
+                <a href="https://www.instagram.com/p/CKrQpIQLgDz/" class="w-ctegory">MAS DETALLES</a>
+                <span class="w-date">30 Enero. 2021</span>
               </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Una bajamar más....limpiando el rio.</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">IMAGEN</span> / <span class="w-date">30 Enero. 2021</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
-        <div class="col-md-4">
-          <div class="work-box">
-            <a href="img/maquinaria3.jpg" data-lightbox="gallery-mf">
-              <div class="work-img">
-                <img src="img/maquinaria3.jpg" alt="" class="img-fluid">
+        <div class="work-box">
+          <a href="img/maquinaria3.jpg" data-lightbox="maquinaria-gallery">
+            <div class="work-img">
+              <img src="img/maquinaria3.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <h2 class="w-title">Hoy hemos "tuneado" la maquina...</h2>
+              <div class="w-more">               
+                <a href=" https://www.instagram.com/p/CEBknQmCXJ0/" class="w-ctegory">MAS DETALLES</a>
+                <span class="w-date">18 Agosto 2020</span>
               </div>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Hoy hemos "tuneado" la maquina y mejorado ciertos componentes.... a destacar:
-                        -Nuevas barras de fibra de carbono.
-                        -Nuevas juntas resistentes al desgaste por abrasion que produce la arena.
-                        -Nuevo cubrecable.</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">IMAGEN</span> / <span class="w-date">18 Agosto 2020</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <span class="ion-ios-plus-outline"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
-       
+        <div class="work-box">
+          <a href="img/maquinaria4.jpg" data-lightbox="maquinaria-gallery">
+            <div class="work-img">
+              <img src="img/maquinaria4.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="work-content">
+              <h2 class="w-title">Nueva maquinaria para el proyecto...</h2>
+              <div class="w-more">
+                <a href="https://www.instagram.com/p/CqVQhLEs2Gr/" class="w-ctegory">MAS DETALLES</a>
+                <span class="w-date">20 Septiembre 2023</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Flechas de navegación para el slider -->
+      <div class="nav-buttons">
+        <button class="owl-prev"><i class="fa fa-chevron-left"></i></button>
+        <button class="owl-next"><i class="fa fa-chevron-right"></i></button>
+      </div>
+    </div>
   </section>
+  
+  
+  
   
   <!--/ Section Portfolio End /-->
 
@@ -389,159 +389,156 @@
 
 
 
-  <!--/ Section Testimonials Star /--><!--
-  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
+<!-- / Section Comments Start /-->
+<section id="Comentarios" class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="testimonial-mf" class="owl-carousel owl-theme">
-            <div class="testimonial-box">
-              <div class="author-test">
-                <img src="img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">Xavi Alonso</span>
-              </div>
-              <div class="content-test">
-                <p class="description lead">
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <span class="comit"><i class="fa fa-quote-right"></i></span>
-              </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="testimonial-mf" class="owl-carousel owl-theme">
+                    <div class="testimonial-box">
+                        <div class="author-test">
+                            <a href="img/testimonial-2.jpg" data-lightbox="gallery-mf">
+                                <img src="img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a" width="200" height="200">
+                            </a>
+                            <span class="author">Masterclass</span>
+                        </div>
+                        <div class="content-test">
+                            <p class="description lead">
+                                Noche de masterclass 😀 con unos chavales que mostraron interés y curiosidad por el hobbie.
+                                @oscar_fdzz y compañía aprendieron un poco sobre el uso de un detector de metales,
+                                de un pinpointer, de dónde y cómo se puede utilizar..etc.
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.instagram.com/p/CvFDsx6MLzs/?img_index=1" class="custom-link" target="_blank">Leer historia completa</a>
+                            </p>
+                            <div class="w-more text-center">
+                                <span class="w-date">24 Julio 2023</span>
+                            </div>
+                            <span class="comit"><i class="fa fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="testimonial-box">
+                        <div class="author-test">
+                            <a href="img/testimonial-4.jpg" data-lightbox="gallery-mf">
+                                <img src="img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a" width="200" height="200">
+                            </a>
+                            <span class="author">Masterclass</span>
+                        </div>
+                        <div class="content-test">
+                            <p class="description lead">
+                                Apenas tengo tiempo, pero confío poder hacer un reel o una historia
+                                en este caso con final feliz Me alegro mogollón por vosotros Susana y Guillermo. 
+                                El momento y la reacción no lo he grabado por respeto.. pero fue la recuperación
+                                más corta que he hecho. Montar equipos, una pequeña Masterclass a Susana y en cuanto configure el Manticore.. PINGPING 😀😃🙂 señal de 25 y apareció!!.
+                                Sensibilidad a 10 porque me pillaba los forjados adyacentes y un momento increíble.
+                                Gracias por esa cervecita chicos!
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.instagram.com/p/CtPbVj3Mmf0/" class="custom-link" target="_blank">Leer historia completa</a>
+                            </p>
+                            <div class="w-more text-center">
+                                <span class="w-date">24 Julio 2023</span>
+                            </div>
+                            <span class="comit"><i class="fa fa-quote-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- La sección de los puntos se genera automáticamente, no necesitas agregarla manualmente -->
+                <div class="owl-dots"></div> <!-- Este es el contenedor de los puntos que aparecerán -->
             </div>
-            <div class="testimonial-box">
-              <div class="author-test">
-                <img src="img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
-                <span class="author">Marta Socrate</span>
-              </div>
-              <div class="content-test">
-                <p class="description lead">
-                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <span class="comit"><i class="fa fa-quote-right"></i></span>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</section>
 
-  <!--/ Section Blog Star /--><!--
-  <section id="blog" class="blog-mf sect-pt4 route">
+<!-- / Section Comments End /-->
+
+<!--/ Section Contact-Footer Star /-->
+
+<section id="contactos" class="contactos">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Blog
-            </h3>
-            <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            <div class="line-mf"></div>
+        <h3 class="titulo aos-init aos-animate" data-aos="fade-left" data-aos-delay="300" >
+            Contacta conmigo a traves de:
+            <b class="site-contacto styles_typicalWrapper__1_Uvh">
+              <span class="text-slider-contact-items"></span>
+              <strong class="text-slider-contacto"></strong>
+            </b>
+          </h3>
+          
+  
+      <div class="icons">
+        <!-- Gmail -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=frenchiastur@gmail.com" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fas fa-envelope"></span>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Travel</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
+          <div class="text">Gmail</div>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://api.whatsapp.com/send?phone=34692861313" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-whatsapp"></span>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
+          <div class="text">WhatsApp</div>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/ayalguero/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-instagram"></span>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card card-blog">
-            <div class="card-img">
-              <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
-            </div>
-            <div class="card-body">
-              <div class="card-category-box">
-                <div class="card-category">
-                  <h6 class="category">Web Design</h6>
-                </div>
-              </div>
-              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-              <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="post-author">
-                <a href="#">
-                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                  <span class="author">Morgan Freeman</span>
-                </a>
-              </div>
-              <div class="post-date">
-                <span class="ion-ios-clock-outline"></span> 10 min
-              </div>
-            </div>
+          <div class="text">Instagram</div>
+        </a>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/pabloefren.garciadiaz" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-facebook-f"></span>
           </div>
-        </div>
+          <div class="text">Facebook</div>
+        </a>
       </div>
     </div>
   </section>
-  <!--/ Section Blog End /-->
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
   <!--/ Section Contact-Footer Star /--><!--
   <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
@@ -653,7 +650,7 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
--->
+
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
@@ -671,6 +668,12 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+ 
+
 
 </body>
 </html>

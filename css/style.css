@@ -767,58 +767,106 @@ a:hover {
 /*======================================
 //--//-->   PORTFOLIO
 ======================================*/
+.portfolio-mf .container {
+  max-width: 1000px; /* Ajustar el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centrar el contenedor */
+  position: relative; /* Para que las flechas se posicionen respecto a este contenedor */
+}
 
 .work-box {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem; /* Espacio entre los elementos */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
+  border-radius: 8px; /* Esquinas redondeadas */
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
 }
 
-.work-box:hover img {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+/* Estructura para el slider */
+.maquinaria-slider .work-box {
+  margin-bottom: 0; /* Eliminar el espacio entre elementos en el slider */
+  padding: 0; /* Sin relleno en el trabajo-box */
 }
 
-.work-img {
-  display: block;
-  overflow: hidden;
-}
-
+/* Ajustar el tamaño de la imagen para que llene el contenedor */
 .work-img img {
-  transition: all 1s;
+  width: 100%; /* Asegurarse de que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantener la relación de aspecto */
+  transition: transform 1s; /* Efecto de transformación suave */
 }
 
+/* Efecto de hover para aumentar el tamaño de la imagen */
+.work-box:hover img {
+  transform: scale(1.1); /* Escala un poco la imagen al pasar el mouse */
+}
+
+/* Ajustar el contenido de trabajo */
 .work-content {
-  padding: 2rem 3% 1rem 4%;
+  padding: 1.5rem; /* Ajustar el relleno para que no esté tan apretado */
+  text-align: left; /* Alinear texto a la izquierda */
 }
 
+/* Estilo para el título */
+.w-title {
+  font-size: 1.4rem; /* Tamaño de la fuente del título */
+  line-height: 1.2; /* Espaciado de línea */
+}
+
+/* Asegurar que el contenido extra sea visible */
 .work-content .w-more {
   color: #4e4e4e;
-  font-size: .8rem;
+  font-size: .9rem;
+  display: flex;
+  justify-content: space-between; /* Alinear categoría y fecha */
+  align-items: center; /* Centrar verticalmente */
+  margin-top: 1rem; /* Separar del título */
 }
 
 .work-content .w-more .w-ctegory {
   color: #0078ff;
 }
 
+/* Quitar el like, ya que mencionaste que no es necesario */
 .work-content .w-like {
-  font-size: 2.5rem;
-  color: #0078ff;
-  float: right;
+  display: none; /* Ocultar el ícono de like */
 }
 
-.work-content .w-like a {
-  color: #0078ff;
+/* Estilos para las flechas de navegación */
+.nav-buttons {
+  position: absolute; /* Posicionar con respecto al contenedor padre */
+  top: 50%; /* Centrar verticalmente */
+  width: 100%; /* Ocupa todo el ancho */
+  display: flex; /* Usar flexbox para alinear */
+  justify-content: space-between; /* Espacio entre las flechas */
+  transform: translateY(-50%); /* Centrar las flechas */
+  z-index: 100; /* Asegurar que estén encima de otras capas */
 }
 
-.work-content .w-like .num-like {
-  font-size: .7rem;
+.owl-prev, .owl-next {
+  background: rgba(255, 255, 255, 0.7); /* Fondo semi-transparente */
+  border: none; /* Sin borde */
+  border-radius: 50%; /* Esquinas redondeadas */
+  padding: 20px; /* Relleno para los botones */
+  cursor: pointer; /* Cambiar el cursor al pasar */
+  display: flex; /* Usar flex para centrar el icono */
+  align-items: center; /* Alinear icono verticalmente */
+  justify-content: center; /* Alinear icono horizontalmente */
 }
 
-.w-title {
-  font-size: 1.2rem;
+.owl-prev:hover, .owl-next:hover {
+  background: rgba(255, 255, 255, 1); /* Cambiar el fondo al pasar el mouse */
 }
+
+.owl-prev i, .owl-next i {
+  font-size: 1.5rem; /* Ajustar el tamaño del icono */
+  color: #0078ff; /* Color del icono */
+}
+
+.owl-dots, .owl-nav {
+  display: none !important; /* Oculta las flechas y los puntos de navegación por defecto */
+}
+
+
 
 /*======================================
 //--//-->   TESTIMONIALS
@@ -861,106 +909,32 @@ a:hover {
   border-radius: 50%;
   line-height: 1.6;
 }
-
-/*======================================
-//--//-->   BLOG
-======================================*/
-
-.card-blog .card-body {
-  position: relative;
+.owl-dots {
+  text-align: center; /* Centrar los puntos */
+  margin-top: 20px; /* Espacio entre el carrusel y los puntos */
 }
 
-.card-blog .card-category-box {
-  position: absolute;
-  text-align: center;
-  top: -16px;
-  left: 15px;
-  right: 15px;
-  line-height: 25px;
-  overflow: hidden;
+.owl-dot {
+  display: inline-block; /* Alinear los puntos en línea */
+  margin: 0 5px; /* Espacio entre puntos */
+  cursor: pointer; /* Cambiar el cursor al pasar */
 }
 
-.card-blog .card-category {
-  display: inline-block;
-  color: #fff;
-  padding: 0 15px 5px;
-  overflow: hidden;
-  background-color: #0078ff;
-  border-radius: 4px;
+.owl-dot span {
+  width: 20px; /* Ancho de cada punto */
+  height: 2px; /* Alto de cada punto */
+  background: #ddd; /* Color del punto inactivo */
+  border-radius: 50%; /* Hacer que los puntos sean circulares */
+  display: block; /* Hacer que el punto sea un bloque */
+  transition: background 0.3s; /* Efecto de transición al cambiar el color */
 }
 
-.card-blog .card-category .category {
-  color: #fff;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: .7rem;
-  letter-spacing: .1px;
-  margin-bottom: 0;
+.owl-dot.active span {
+  background: #0078ff; /* Color del punto activo */
 }
 
-.card-blog .card-title {
-  font-size: 1.3rem;
-  margin-top: .6rem;
-}
 
-.card-blog .card-description {
-  color: #4e4e4e;
-}
 
-.card-blog .post-author {
-  display: inline-block;
-}
-
-.card-blog .post-date {
-  color: #4e4e4e;
-  display: inline-block;
-  float: right;
-}
-
-/*======================================
-//--//-->   BLOG-SINGLE
-======================================*/
-
-.post-box,
-.form-comments,
-.box-comments,
-.widget-sidebar {
-  padding: 2rem;
-  background-color: #fff;
-  margin-bottom: 3rem;
-}
-
-.blog-wrapper .article-title {
-  font-size: 1.5rem;
-}
-
-.blog-wrapper .post-meta {
-  margin: 1rem 0;
-}
-
-.blog-wrapper .post-meta ul {
-  border-left: 4px solid #0078ff;
-  margin-top: 1rem;
-}
-
-.blog-wrapper .post-meta ul li {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.blog-wrapper .post-meta ul a {
-  color: #0078ff;
-}
-
-.blog-wrapper .post-meta ul span {
-  color: #1e1e1e;
-}
-
-.blog-wrapper .blockquote {
-  border-left: 4px solid #0078ff;
-  padding: 18px;
-  font-style: italic;
-}
 
 /*------/ Comments /------*/
 
@@ -1000,6 +974,8 @@ a:hover {
 .box-comments .comment-children {
   margin-left: 40px;
 }
+
+
 
 /*------/ Sidebar /------*/
 
@@ -1056,13 +1032,167 @@ a:hover {
 /*======================================
 //--//-->   CONTACT
 ======================================*/
+/********************** Contactos **********************/
 
-.footer-paralax {
-  padding: 4rem 0 0 0;
+.contactos {
+  margin-top: 3rem;
+  background-color: black;
 }
 
-.contact-mf {
-  margin-top: 4rem;
+.contactos .titulo {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 4rem;
+  color: var(--light-color-white);
+  text-transform: none;
+}
+
+.contactos .site-contacto {
+  font-weight: bold;
+  color: var(--black);
+  font-style: normal;
+  font-size: 2.3rem;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 6rem 0;
+}
+
+.icons a {
+  margin: 5rem 3rem;
+  text-decoration: none;
+  color: #d22269;
+  display: block;
+  position: relative;
+}
+
+.icons a .layer {
+  width: 7rem;
+  height: 7rem;
+  transition: transform 0.3s;
+}
+
+.icons a:hover .layer {
+  transform: rotate(-35deg) skew(20deg);
+}
+
+.icons a .layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 3px solid #f503aa;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.icons a .layer span.fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  line-height: 55px;
+}
+
+.icons a:hover .layer span:nth-child(1) {
+  opacity: 0.2;
+  box-shadow: -1px 1px 3px #D44638;
+}
+
+.icons a:hover .layer span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+  box-shadow: -1px 1px 3px #25D366;
+}
+
+
+
+.icons a:hover .layer span:nth-child(4) {
+  opacity: 0.8;
+  transform: translate(15px, -15px);
+}
+
+
+
+/* Efecto de relieve y aparición del texto */
+.icons a .text {
+  position: absolute;
+  left: 50%;
+  bottom: -20px; /* Comienza fuera de la vista */
+  opacity: 0; /* Invisible al inicio */
+  font-size: 2rem;
+  font-weight: 600;
+  transform: translateX(-50%);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Efecto de relieve */
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+/* El texto aparecerá al pasar el ratón */
+.icons a:hover .text {
+  bottom: -50px; /* Se muestra más abajo */
+  opacity: 1; /* Visible */
+}
+
+/* Gmail */
+.icons a:nth-child(1) .layer span,
+.icons a:nth-child(1) .text {
+    color: #D44638; /* Color de Gmail */
+    border-color: #D44638;
+}
+
+/* WhatsApp */
+.icons a:nth-child(2) .layer span,
+.icons a:nth-child(2) .text {
+    color: #25D366; /* Color de WhatsApp */
+    border-color: #25D366;
+}
+.icons a:nth-child(4) .layer span,
+.icons a:nth-child(4) .text {
+    color: #1877F2; /* Color de Facebook */
+    border-color: #1877F2;
+}
+
+
+
+.icons a:nth-child
+
+/* Slider de texto para los nombres */
+.text-slider {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #eb1414;
+}
+
+.text-slider-items {
+  display: none;
+}
+.site-contacto {
+  color: #0000; /* Ajusta el color según el tema */
+}
+
+/* Gmail */
+.gmail-color {
+  color: #D44638;
+}
+
+/* WhatsApp */
+.whatsapp-color {
+  color: #25D366;
+}
+
+/* Instagram */
+.instagram-color {
+  color: #C13584;
+}
+
+/* Facebook */
+.facebook-color {
+  color: #1877F2;
 }
 
 /*======================================
