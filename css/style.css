@@ -892,7 +892,7 @@ a:hover {
   margin-top: 3rem;
   padding: 3rem 0; /* Relleno superior e inferior */
   color: white; /* Texto blanco para contraste */
-  background:  url('/img/Fondo_Difuminado.png') no-repeat center center;
+  background:  url('/img/FondoBorroso.jpg') no-repeat center center;
   background-size: cover; /* Asegura que la imagen cubra todo el fondo */
   position: relative; /* Para manejar el posicionamiento de elementos hijos */
 }
