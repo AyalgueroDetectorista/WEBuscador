@@ -890,11 +890,9 @@ a:hover {
 
 .contactos {
   margin-top: 3rem;
-  padding: 3rem 0; /* Relleno superior e inferior */
-  color: white; /* Texto blanco para contraste */
-  background: url('/img/FondoBorroso.jpg'); ;
-  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-  position: relative; /* Para manejar el posicionamiento de elementos hijos */
+  padding: 5rem 0; /* Relleno superior e inferior */
+  color: rgb(255, 255, 255); /* Texto blanco para contraste */  
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */ 
 }
 
 /* Estilo del título de la sección */
